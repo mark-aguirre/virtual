@@ -1,0 +1,91 @@
+<main class="flex justify-center px-4 md:px-20 lg:px-40 xl:px-80 min-h-screen p-4 w-full">
+
+  <!--  Welcome Section-->
+  <div class="text-white px-5 py-2 w-full">
+    <h1 class="text-7xl mb-4 font-light" style="color: #0652dd">Hey, I'm Mark</h1>
+    <p class="text-lg">I am a java developer.</p>
+    <p class="text-lg mt-1" style="color: #97D7F2">
+      I'm currently maintaining <a href="https://player-companion.com"><b>Player-companion</b></a>, a platform that
+      provides valuable insights and tools to enhance
+      baccarat
+      and sicbo gameplay.
+    </p>
+
+    <div class="flex items-center space-x-4">
+      <a href="https://player-companion.com" class="text-blue-500 hover:underline mt-4 inline-block">
+        Player-companion
+      </a>
+      <span class="mt-2.5">|</span>
+      <a href="https://discord.gg/6c3HzwwC" class="text-blue-500 hover:underline mt-4 inline-block">
+        Join the Discord Community
+      </a>
+      <span class="mt-2.5">|</span>
+      <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">
+        Resume
+      </a>
+    </div>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-9 gap-4 p-4">
+      <h1 class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-9 text-3xl mt-5 font-light" @fadeIn>Skill and
+        Tools</h1>
+
+      <div *ngFor="let skill of skills" class="skill-item rounded-md flex justify-center items-center p-2 relative"
+           [ngClass]="{'hover:bg-blue-700': skill.showPopup}" (mouseenter)="skill.showPopup = true"
+           (mouseleave)="skill.showPopup = false" @fadeIn>
+        <a [href]="skill.url" target="_blank" class="text-lg text-white">
+          <div class="flex flex-col items-center w-full">
+
+            <span>{{ skill.name }}</span>
+            <img [src]="'assets/images/' + skill.image" [alt]="skill.name + ' Logo'" class="w-20 h-auto">
+
+            <div class="relative w-full h-6 mt-2">
+              <div
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 bg-blue-500 w-0 h-0 border-l-8 border-r-8 border-b-16 border-l-transparent border-r-transparent border-b-blue-500"></div>
+              <div class="absolute bottom-0 left-0 bg-green-300" [ngStyle]="{'width.%': skill.level}"
+                   style="height: 33%; border-bottom-left-radius: 0.375rem;"></div>
+              <div class="absolute bottom-0 right-0 bg-blue-700" [ngStyle]="{'width.%': 100 - skill.level}"
+                   style="height: 33%; border-bottom-right-radius: 0.375rem;"></div>
+            </div>
+          </div>
+        </a>
+        <div *ngIf="skill.showPopup" class="absolute top-0 left-0 bg-white text-black p-2 rounded shadow-lg z-10">
+          <p>Level: {{ skill.level }}%</p>
+        </div>
+      </div>
+    </div>
+
+    <!--    contacts-->
+    <div class="bg-gray-900 text-white p-4 mt-5">
+
+      <h1 class="text-3xl mb-4 font-light">You can contact me via the following media</h1>
+      <ul class="list-none">
+        <li class="mb-2">
+          <span class="font-bold">Discord: </span>
+          <a href="https://discord.gg/KANqyZCd"
+             class="text-blue-500 hover:underline">discord.gg/KANqyZCd</a>
+        </li>
+        <li class="mb-2">
+          <span class="font-bold">Whatsapp: </span>
+          <a href="#"
+             class="text-blue-500 hover:underline">0925 494 2581</a>
+        </li>
+        <li class="mb-2">
+          <span class="font-bold">Linkin: </span>
+          <a href="https://www.linkedin.com/in/mark-somerson-aguirre-a33991152/"
+             class="text-blue-500 hover:underline">mark-somerson-aguirre</a>
+        </li>
+        <li class="mb-2">
+          <span class="font-bold">Gmail: </span>
+          <a href="mailto:aguirre.mark.s.r@gmail.com" class="text-blue-500 hover:underline">aguirre.mark.s.r</a>
+        </li>
+        <li>
+          <span class="font-bold">Github: </span>
+          <a href="https://github.com/MarkAguirre26"
+             class="text-blue-500 hover:underline">github.com/MarkAguirre26</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</main>

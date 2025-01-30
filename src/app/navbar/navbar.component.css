@@ -1,0 +1,10 @@
+.active .active-span {
+  width: 100%; /* Fully visible for active links */
+
+}
+
+a.active {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #41C460;
+}
+

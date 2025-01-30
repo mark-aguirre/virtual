@@ -1,0 +1,42 @@
+<main class="flex justify-center  px-4 md:px-20 lg:px-40 xl:px-80 min-h-screen p-4 w-full">
+  <div class="w-full md:w-1/2">
+    <div class="text-white px-5 py-2">
+
+      <span><b>Note:</b> Projects owned by clients are not included due to NDA restrictions.</span>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4">
+        <div *ngFor="let project of projects"
+             class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-5">
+          <div class="flex flex-col space-y-4">
+            <div class="flex flex-col space-y-2">
+              <h1 class="text-2xl font-light">{{ project.name }}</h1>
+              <img [src]="'assets/images/projects/' + project.image" [alt]="project.name"
+                   class="w-full max-h-40 object-cover rounded-lg">
+              <p class="text-gray-400">{{ project.description }}</p>
+
+              <div class="flex space-x-4">
+                <a [href]="project.website" class="text-blue-500 hover:underline">Website </a>
+                <span *ngIf="project.website && project.repository">|</span>
+                <a [href]="project.repository" class="text-blue-500 hover:underline">Github </a>
+              </div>
+            </div>
+          </div>
+
+          <!--        put a separator line, add a bit height-->
+          <hr class="border-gray-400 h-1 mt-6" style="opacity: 0.2;">
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+
+</main>

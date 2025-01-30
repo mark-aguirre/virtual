@@ -1,0 +1,64 @@
+<nav class="main-bg p-4">
+  <div class="container">
+    <div class="flex justify-start">
+      <!-- Logo -->
+      <a href="#" class="text-white text-2xl hidden md:block">
+        Virtual.dev
+      </a>
+      <!-- Mobile Menu Button -->
+      <button class="block md:hidden text-white focus:outline-none" (click)="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <ul class="hidden md:flex space-x-8 ml-10">
+        <li>
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="relative text-white text-2xl hover:text-gray-400 transition duration-300 group font-light">
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="/projects"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="relative text-white text-2xl hover:text-gray-400 transition duration-300 group font-light">
+            Projects
+          </a>
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden" [ngClass]="{'hidden': !isMenuOpen, 'block': isMenuOpen}">
+    <ul class="space-y-4">
+      <li>
+        <a
+          href="#"
+          routerLinkActive="active"
+          class="block text-white text-xl hover:text-gray-400 transition duration-300"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/projects"
+          routerLinkActive="active"
+          class="block text-white text-xl hover:text-gray-400 transition duration-300">
+          Projects
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+</nav>
