@@ -1,59 +1,61 @@
-# Virtual
+# Virtual Project
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+## Overview
+This project is a web application built with Angular. It includes a navigation bar, a home page with a welcome section, skills and tools section, and contact information. The project uses Tailwind CSS for styling and animations.
 
-## Development server
+## Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Angular CLI
 
-To start a local development server, run:
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MarkAguirre26/virtual.git
+   cd virtual
+   ```
 
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+## Running the Application
+To start the development server, run:
 ```bash
-ng serve
+npm start
 ```
+The application will be available at `http://localhost:4200`.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+## Building the Application
+To build the application for production, run:
 ```bash
-ng generate component component-name
+npm run build
 ```
+The build artifacts will be stored in the `dist/` directory.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+## Project Structure
+- `src/app/app.component.ts`: Main application component.
+- `src/app/navbar/navbar.component.html`: HTML template for the navigation bar.
+- `src/app/home/home.component.html`: HTML template for the home page.
 
-## Building
+## Dependencies
+- Angular: ^19.1.0
+- RxJS: ~7.8.0
+- Tailwind CSS: ^3.4.17
 
-To build the project run:
+## DevDependencies
+- Angular CLI: ^19.1.4
+- TypeScript: ~5.7.2
+- Karma: ~6.4.0
 
-```bash
-ng build
-```
+## Contact
+For any inquiries, you can reach out via:
+- Discord: [discord.gg/KANqyZCd](https://discord.gg/KANqyZCd)
+- LinkedIn: [mark-somerson-aguirre](https://www.linkedin.com/in/mark-somerson-aguirre-a33991152/)
+- Email: [aguirre.mark.s.r@gmail.com](mailto:aguirre.mark.s.r@gmail.com)
+- GitHub: [MarkAguirre26](https://github.com/MarkAguirre26)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## License
+This project is licensed under the MIT License.
