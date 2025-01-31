@@ -26,10 +26,10 @@
     </div>
 
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-9 gap-4 p-4">
-      <h1 class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-9 text-3xl mt-5 font-light" @fadeIn>Skill and
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4 p-4">
+      <h1 class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-9 text-3xl mt-5 font-light" @fadeIn>
+        Skill and
         Tools</h1>
-
       <div *ngFor="let skill of skills" class="skill-item rounded-md flex justify-center items-center p-2 relative"
            [ngClass]="{'hover:bg-blue-700': skill.showPopup}" (mouseenter)="skill.showPopup = true"
            (mouseleave)="skill.showPopup = false" @fadeIn>
@@ -51,6 +51,24 @@
         </a>
         <div *ngIf="skill.showPopup" class="absolute top-0 left-0 bg-white text-black p-2 rounded shadow-lg z-10">
           <p>Level: {{ skill.level }}%</p>
+        </div>
+      </div>
+    </div>
+
+    <!--    TOOLS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-10 gap-4 p-4">
+      <div *ngFor="let tool of tools" class="skill-item rounded-full flex justify-center items-center p-2 relative"
+           [ngClass]="{'hover:bg-blue-700': tool.showPopup}" (mouseenter)="tool.showPopup = true"
+           (mouseleave)="tool.showPopup = false" @fadeIn>
+
+        <a [href]="tool.url" target="_blank" class="text-sm text-white">
+          <div class="flex flex-col items-center w-full">
+
+            <img [src]="'assets/images/' + tool.image" [alt]="tool.name + ' Logo'" class="w-10 h-10">
+          </div>
+        </a>
+        <div *ngIf="tool.showPopup" class="absolute top-0 left-0 bg-white text-black p-2 rounded shadow-lg z-10">
+          <p>{{ tool.name }}</p>
         </div>
       </div>
     </div>

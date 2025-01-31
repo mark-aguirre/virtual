@@ -1,4 +1,4 @@
-export interface ISkillTools {
+export interface ISkills {
   name: string;
   image: string;
   level: number;
