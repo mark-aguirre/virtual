@@ -34,6 +34,11 @@ npm run build
 ```
 The build artifacts will be stored in the `dist/` directory.
 
+## Deployment
+You can use netlify(free)
+```text
+"Connect your GitHub repository to Netlify, enabling automatic deployments whenever changes are pushed.
+```
 
 ## Project Structure
 - `src/app/app.component.ts`: Main application component.
