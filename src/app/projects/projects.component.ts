@@ -17,7 +17,7 @@ export class ProjectsComponent implements OnInit{
       name: 'Virtual - Personal Portfolio',
       description: 'an open source personal portfolio template for developers, designers, and content creators.',
       image: 'virtual.png',
-      website: '#',
+      website: 'https://virtual.is-a.dev/',
       repository: 'https://github.com/MarkAguirre26/virtual'
     },
     {
