@@ -57,8 +57,8 @@
 
     <!--    TOOLS -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-10 gap-4 p-4">
-      <div *ngFor="let tool of tools" class="skill-item rounded-full flex justify-center items-center p-2 relative"
-           [ngClass]="{'hover:bg-blue-700': tool.showPopup}" (mouseenter)="tool.showPopup = true"
+      <div *ngFor="let tool of tools" class="tools-item rounded-full flex justify-center items-center p-2 relative"
+            (mouseenter)="tool.showPopup = true"
            (mouseleave)="tool.showPopup = false" @fadeIn>
 
         <a [href]="tool.url" target="_blank" class="text-sm text-white">
