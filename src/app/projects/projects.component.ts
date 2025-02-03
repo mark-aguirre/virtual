@@ -24,7 +24,7 @@ export class ProjectsComponent implements OnInit{
       name: 'Player Companion',
       description: 'Player Companion is a platform that provides valuable insights and tools to enhance baccarat and sicbo gameplay.',
       image: 'player_companion.jpg',
-      website: 'https://sicbo.player-companion.com/',
+      website: 'https://player-companion.com/',
       repository: 'https://github.com/MarkAguirre26/player-companion'
     },
     {
