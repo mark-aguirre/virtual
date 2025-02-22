@@ -12,3 +12,17 @@
 .tools-item {
   background-color: rgba(30, 87, 132, 0);
 }
+
+.skills-container {
+  overflow-x:auto;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+
+
+.tools-container {
+  overflow-x:auto;
+  padding: 1rem;
+  max-width: 100%;
+}
