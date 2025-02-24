@@ -29,16 +29,16 @@ export class HomeComponent implements OnInit {
   skills: ISkills[] = [
     {name: 'Java', image: "java.png", level: 85, url: "https://www.oracle.com/java/", showPopup: false},
     {name: 'Spring', image: "springboot.png", level: 85, url: "https://spring.io/", showPopup: false},
-    {
-      name: 'JavaScript',
-      image: "javascript.png",
-      level: 70,
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      showPopup: false
-    },
+    // {
+    //   name: 'JavaScript',
+    //   image: "javascript.png",
+    //   level: 70,
+    //   url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    //   showPopup: false
+    // },
     {name: 'TypeScript', image: "typescript.png", level: 60, url: "https://www.typescriptlang.org/", showPopup: false},
     {name: 'Angular', image: "angular.png", level: 60, url: "https://angular.io/", showPopup: false},
-    {name: 'React', image: "react.png", level: 60, url: "https://reactjs.org/", showPopup: false},
+    // {name: 'React', image: "react.png", level: 60, url: "https://reactjs.org/", showPopup: false},
     {name: 'Junit', image: "JUnit.svg", level: 70, url: "#", showPopup: false},
   ];
 
