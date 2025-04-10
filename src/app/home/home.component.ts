@@ -8,8 +8,7 @@ import {ITools} from '../models/ITools.model';
   selector: 'app-home',
   standalone: true,
   imports: [
-    CommonModule,
-    NgStyle,
+    CommonModule,    
   ],
   animations: [
     trigger('fadeIn', [
